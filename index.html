@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Gerenciador de Metas e Hábitos</h1>
+        <div id="metas">
+            <h2>Metas</h2>
+            <input type="text" id="novaMetaInput" placeholder="Adicionar nova meta">
+            <button onclick="adicionarMeta()">Adicionar Meta</button>
+            <ul id="listaMetas"></ul>
+        </div>
+        <div id="habitos">
+            <h2>Hábitos Diários</h2>
+            <input type="text" id="novoHabitoInput" placeholder="Adicionar novo hábito">
+            <button onclick="adicionarHabito()">Adicionar Hábito</button>
+            <ul id="listaHabitos"></ul>
+        </div>
+        <div id="progresso">
+            <h2>Progresso</h2>
+            <div id="progressoMetas">Progresso das Metas</div>
+            <div id="progressoHabitos">Progresso dos Hábitos</div>
+            <div id="dashboard">
+                <canvas id="graficoMetas"></canvas>
+                <canvas id="graficoHabitos"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
